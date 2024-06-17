@@ -49,6 +49,12 @@ php -r "unlink('composer-setup.php');"`
 ### Configuración php.ini
 `sudo nano /etc/php/7.4/apache2/php.ini`
 
+memory_limit = 2048M
+
+post_max_size = 2048M
+
+upload_max_filesize = 2048M
+
 ### Reinicio del servidor Apache2
 `sudo service apache2 restart`
 
