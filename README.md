@@ -110,6 +110,11 @@ upload_max_filesize = 2048M
 
 
 
+### Ejemplo de como conectarse
+`http://54.234.85.213:80/api`
+
+
+
 ### Video explicativo:
 [https://youtu.be/uNjyopVYqHU](https://youtu.be/uNjyopVYqHU)
 
