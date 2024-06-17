@@ -62,6 +62,19 @@ upload_max_filesize = 2048M
 ### Reinicio del servidor Apache2
 `sudo service apache2 restart`
 
+
+### Instalar Redis en el servidor
+`sudo apt install redis-server`
+
+`sudo systemctl status redis-server`
+
+`redis-cli ping`
+
+
+### Generar llave en el proyecto
+`php artisan key:generate`
+
+
 ### Instalación proyecto Laravel 8
 `composer create-project laravel/laravel nombre_proyecto`  
 
