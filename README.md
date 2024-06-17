@@ -33,6 +33,9 @@ php -r "unlink('composer-setup.php');"`
 ### Configuración Apache2 
 `sudo nano /etc/apache2/apache2.conf`  
 
+`User ubuntu`
+`Group ubuntu`
+
 `<Directory /home/ubuntu/>
         Options Indexes FollowSymLinks
         AllowOverride All
