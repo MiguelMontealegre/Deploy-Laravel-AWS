@@ -71,12 +71,44 @@ upload_max_filesize = 2048M
 `redis-cli ping`
 
 
+
+### Instalación proyecto Laravel (crear desde 0)
+`composer create-project laravel/laravel nombre_proyecto`  
+
+
+### Instalación proyecto
+`composer update`  
+`composer install`
+
 ### Generar llave en el proyecto
 `php artisan key:generate`
 
 
-### Instalación proyecto Laravel 8
-`composer create-project laravel/laravel nombre_proyecto`  
+### Archivo .htaccess para proyectos NO dockerizados
+`<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>`
+
+
+
 
 ### Video explicativo:
 [https://youtu.be/uNjyopVYqHU](https://youtu.be/uNjyopVYqHU)
