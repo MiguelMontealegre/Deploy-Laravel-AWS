@@ -1,4 +1,7 @@
-# Deploy Laravel 8 en AWS 
+# Deploy Laravel en AWS 
+
+
+`CHMOD 400 MyFirstKP.pem`
 
 
 ### Actualización de paquetes Ubuntu
