@@ -1,39 +1,48 @@
-# Deploy-Laravel-AWS
-Actualización de paquetes Ubuntu
-sudo apt-get update
+# Deploy Laravel 8 en AWS (Menos de 5 minutos)
 
-sudo apt-get upgrade
 
-sudo apt-get update
+### Actualización de paquetes Ubuntu
+`sudo apt-get update`  
 
-Apache2
-sudo apt-get install apache2
+`sudo apt-get upgrade`  
 
-PHP 7.4
-sudo apt install php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath
+`sudo apt-get update`  
 
-Composer
-https://getcomposer.org/download/
+### Apache2
+`sudo apt-get install apache2`  
 
-Modo reescritura Apache2
-sudo a2enmod rewrite
+### PHP 7.4
+`sudo apt install php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath`  
 
-Configuración Apache2
-sudo nano /etc/apache2/apache2.conf
+### Composer
+[https://getcomposer.org/download/](https://getcomposer.org/download/)  
 
-<Directory /home/ubuntu/> Options Indexes FollowSymLinks AllowOverride All Require all granted </Directory> 
+### Modo reescritura Apache2
+`sudo a2enmod rewrite`  
 
-Sitio por defecto Apache2
-sudo nano /etc/apache2/sites-enabled/000-default.conf
 
-Configuración php.ini
-sudo nano /etc/php/7.4/apache2/php.ini
+### Configuración Apache2 
+`sudo nano /etc/apache2/apache2.conf`  
 
-Reinicio del servidor Apache2
-sudo service apache2 restart
+`<Directory /home/ubuntu/>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+</Directory>
+`  
 
-Instalación proyecto Laravel 8
-composer create-project laravel/laravel nombre_proyecto
+###  Sitio por defecto Apache2  
+`sudo nano /etc/apache2/sites-enabled/000-default.conf`  
 
-Video explicativo:
-https://youtu.be/uNjyopVYqHU
+### Configuración php.ini
+`sudo nano /etc/php/7.4/apache2/php.ini`
+
+### Reinicio del servidor Apache2
+`sudo service apache2 restart`
+
+### Instalación proyecto Laravel 8
+`composer create-project laravel/laravel nombre_proyecto`  
+
+### Video explicativo:
+[https://youtu.be/uNjyopVYqHU](https://youtu.be/uNjyopVYqHU)
+
