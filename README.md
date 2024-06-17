@@ -1,6 +1,6 @@
 # Deploy Laravel en AWS 
 
-
+En la carpeta donde se almacena el .pem (maquina local)
 `CHMOD 400 MyFirstKP.pem`
 
 
