@@ -1,4 +1,4 @@
-# Deploy Laravel 8 en AWS (Menos de 5 minutos)
+# Deploy Laravel 8 en AWS 
 
 
 ### Actualización de paquetes Ubuntu
