@@ -29,6 +29,11 @@ php -v`
 ### PHP Normal
 `sudo apt install php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath`  
 
+
+### PHP INFO (php.ini ...)
+`php -info`
+
+
 ### Composer
 [https://getcomposer.org/download/](https://getcomposer.org/download/)
 
