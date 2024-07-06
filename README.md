@@ -50,6 +50,8 @@ php -r "unlink('composer-setup.php');"`
 ###  Sitio por defecto Apache2  
 `sudo nano /etc/apache2/sites-enabled/000-default.conf`  
 
+DocumentRoot /home/ubuntu/project/public
+
 ### Configuración php.ini
 `sudo nano /etc/php/7.4/apache2/php.ini`
 
